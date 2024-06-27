@@ -1,3 +1,13 @@
+Bizarre Actor Pouts On
+======================
+
+* [What did you call me!?](#what-did-you-call-me)
+* [Get the facts!](#get-the-facts)
+* [What does it all mean?](#what-does-it-all-mean)
+* [How to](#how-to)
+
+
+
 # What did you call me!? 
 "Bizarre Actor Pouts On"... is a beautiful anagram for Anzu Robotics Raptor! Lets learn a little more about this bizarre actor, shall we? 
 
@@ -47,13 +57,13 @@ From the report above a very important observation is made:
 "There is our Anzu firmware living on the DJI CDN, so the firmware is also hosted by DJI in contrary to the claims from Anzu."
 
 We previously learned "Aloft is ISO 27001 and SOC 2 Type II certified", because I'm lazy I asked ChatGPT the following question: 
-"would you expect a Aloft as ISO 27001 and SOC 2 Type II certified business to have an open AWS share exposing development software and firmware? would you expect them to be in control of the encryption keys for the software that goes on hardware they white label?"
-
-I don't disagree with the answer: 
 
 | ![GPTAintWrong](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/GPTAintWrong.png) | 
 |:--:| 
 | *GPTAintWrong* |
+
+I don't disagree with the answer
+
 
 # What does it all mean? 
 
