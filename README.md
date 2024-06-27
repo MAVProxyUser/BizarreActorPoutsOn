@@ -93,5 +93,7 @@ This means you can make your own DIY Raptor using the [DJI Slack OG tools](https
 # How to
 IF you are lucky an [OG](https://www.dji-rev.com) may help you out. You probably need to hit #spoon-feeding however. 
 
+See the retroroms ["List of the Modules and What they Effect"](https://github.com/MAVProxyUser/BizarreActorPoutsOn/tree/main) for more detail. 
+
 
 
