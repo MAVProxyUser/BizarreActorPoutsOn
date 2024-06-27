@@ -1,6 +1,8 @@
 "Bizarre Actor Pouts On"... is a beautiful anagram for Anzu Robotics Raptor! Lets learn a little more about this bizarre actor, shall we? 
 
-![I can haz Raptorburger?!](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/BizzareActorPouting.jpg)
+| ![I can haz Raptorburger?!](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/BizzareActorPouting.jpg) | 
+|:--:| 
+| *I can haz Raptorburger?!* |
 
 ["Aloft Announces Strategic Partnership with Anzu Robotics to Launch the Raptor Drone, Elevating Enterprise Fleet Management and Airspace Compliance"](https://www.aloft.ai/blog/aloft-announces-strategic-partnership-with-anzu-robotics-to-launch-the-raptor-drone-elevating-enterprise-fleet-management-and-airspace-compliance/)
 
@@ -34,13 +36,34 @@ We previously learned "Aloft is ISO 27001 and SOC 2 Type II certified", because 
 
 I don't disagree with the answer: 
 
-"Open AWS Share Exposing Development Software and Firmware:
-ISO 27001: This standard requires organizations to establish, implement, maintain, and continually improve an information security management system (ISMS). This includes strict access control mechanisms and regular risk assessments to identify and mitigate security vulnerabilities.
-SOC 2 Type II: This certification focuses on the operational effectiveness of an organization's security controls over a period of time. It covers aspects such as confidentiality, privacy, and security, emphasizing robust access control and data protection measures.
-Given these certifications, an open AWS share exposing development software and firmware would indicate a significant lapse in security practices and controls, potentially violating the standards and principles underlying their certifications.
+| ![GPTAintWrong](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/GPTAintWrong.png) | 
+|:--:| 
+| *GPTAintWrong* |
 
-Control of Encryption Keys for White-Labeled Software:
-It is generally expected that a company in control of encryption keys for software, especially if they white-label products, maintains stringent security practices. Control over encryption keys is crucial for ensuring the integrity, confidentiality, and authenticity of the software deployed on hardware.
-Both ISO 27001 and SOC 2 Type II frameworks emphasize the importance of managing and securing cryptographic keys. These keys should be safeguarded against unauthorized access and misuse, often through mechanisms like hardware security modules (HSMs) or key management services (KMS).
-If Aloft were to adhere strictly to the security principles mandated by their certifications, they would be expected to maintain rigorous control over encryption keys and ensure secure storage and handling of all sensitive assets, including development software and firmware."
+# What does it all mean? 
+
+Welp the firmware was leaked, and we weren't the only ones to get it... 
+| ![others.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/others.png) | 
+|:--:| 
+| *others* |
+
+This means you can make your own DIY Raptor
+
+| ![1.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/1.jpg) | 
+|:--:| 
+| *1* |
+
+| ![2.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/2.jpg) | 
+|:--:| 
+| *2* |
+
+| ![3.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/3.jpg) | 
+|:--:| 
+| *3* |
+
+| ![4.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/4.jpg) | 
+|:--:| 
+| *4* |
+
+
 
