@@ -71,7 +71,7 @@ Very specifically it calls into question the statements that indicate Aloft / An
 Welp the firmware was leaked, and we weren't the only ones to get it... so the first statement is already confirmed as being false 1) because it was on DJI Content Delivery Network, 2) because it was leaked via AWS.
 | ![others.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/others.png) | 
 |:--:| 
-| *others* |
+| *Those before us? or those shoulder to shoulder with us?* |
 
 This means you can make your own DIY Raptor using the [DJI Slack OG tools](https://github.com/o-gs/dji-firmware-tools), which brings the second statement on the ability to "force firmware updates" into question. Anyone with physical access to a raptor can technically force a firmware update. At any step in the supply chain, anyone with DJI firmware keys can additionally modify the firmware. Flashing can be done by anyone with the correct tools of course. 
 
