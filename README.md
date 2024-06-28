@@ -5,7 +5,7 @@ Bizarre Actor Pouts On
 * [Get the facts!](#get-the-facts)
 * [What does it all mean?](#what-does-it-all-mean)
 * [How to](#how-to)
-
+* [Mitigation](#mitigation)
 
 
 # What did you call me!? 
@@ -107,7 +107,7 @@ There is more than enough public info for you to accomplish your own flashing in
 
 # Mitigation
 
-Anzu will need to obtain their own "root keys" as described in the [https://www.dji.com/trust-center/resource/white-paper](DJI Drone Security White Paper 3.0), and burn them into their hardware. 
+Anzu Robotics / Aloft will need to obtain their own "keys" as described in the [DJI Drone Security White Paper 3.0](https://www.dji.com/trust-center/resource/white-paper), and burn them into their hardware accordingly. The following changes will need to be made: 
 
 New root keys:
 ```
