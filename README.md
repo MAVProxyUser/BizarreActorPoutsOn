@@ -75,13 +75,17 @@ Welp the firmware was leaked, and we weren't the only ones to get it... so the f
 
 This means you can make your own DIY Raptor using the [DJI Slack OG tools](https://github.com/o-gs/dji-firmware-tools), which brings the second statement on the ability to "force firmware updates" into question. Anyone with physical access to a raptor can technically force a firmware update. At any step in the supply chain, anyone with DJI firmware keys can additionally modify the firmware. Flashing can be done by anyone with the correct tools of course. 
 
+Photos below donated by OG bin4ry:<br>
+https://www.linkedin.com/in/makrisandreas/<br>
+https://x.com/Bin4ryDigit
+
 | ![1.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/1.jpg) | 
 |:--:| 
-| *Stock M3 with Anzu branded Aloft software* |
+| *Stock M3T with Anzu branded Aloft software* |
 
 | ![2.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/2.jpg) | 
 |:--:| 
-| *DIY M3 showing video feed in Anzu flavored Aloft Aircontrol* |
+| *DIY M3T showing video feed in Anzu flavored Aloft Aircontrol* |
 
 | ![3.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/3.jpg) | 
 |:--:| 
