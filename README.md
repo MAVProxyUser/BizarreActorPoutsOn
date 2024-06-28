@@ -66,13 +66,14 @@ I don't disagree with the answer
 
 
 # What does it all mean? 
+Very specifically it calls into question the statements that indicate Aloft / Anzu Raptor firmware "can’t be accessed or modified by anyone else", and that "no third-parties are able to force firmware updates through our system" 
 
-Welp the firmware was leaked, and we weren't the only ones to get it... 
+Welp the firmware was leaked, and we weren't the only ones to get it... so the first statement is already confirmed as being false 1) because it was on DJI Content Delivery Network, 2) because it was leaked via AWS.
 | ![others.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/others.png) | 
 |:--:| 
 | *others* |
 
-This means you can make your own DIY Raptor using the [DJI Slack OG tools](https://github.com/o-gs/dji-firmware-tools) 
+This means you can make your own DIY Raptor using the [DJI Slack OG tools](https://github.com/o-gs/dji-firmware-tools), which brings the second statement on the ability to "force firmware updates" into question. Anyone with physical access to a raptor can technically force a firmware update. At any step in the supply chain, anyone with DJI firmware keys can additionally modify the firmware. Flashing can be done by anyone with the correct tools of course. 
 
 | ![1.jpg](https://github.com/MAVProxyUser/BizarreActorPoutsOn/raw/main/1.jpg) | 
 |:--:| 
@@ -90,10 +91,63 @@ This means you can make your own DIY Raptor using the [DJI Slack OG tools](https
 |:--:| 
 | *Warranty repair uses these serial numbers... lol* |
 
+["So here we go on the brink of a DJI ban. Is our knight in shining armor Anzu Robotics? So I have to ask, Randall Warnas can you retro an existing DJI aircraft to make it NDAA compliant? asking for a friend..."](https://www.linkedin.com/posts/andreas-aj-johansson-28334b51_dji-uas-drones-activity-7206867058356068352-3aKn/?utm_source=share&utm_medium=member_desktop)
+It won't be NDAA compliant, but sure, knock yourself out... go on and retrofit your DJI Mavic 3 series controller with Aloft Air Control for Raptor, and flash the firmware to match the original Raptor firmware. Have fun! 
+
 # How to
+*coming soon*
+
 IF you are lucky an [OG](https://www.dji-rev.com) may help you out. You probably need to hit #spoon-feeding however. 
 
 See the retroroms ["List of the Modules and What they Effect"](https://github.com/MAVProxyUser/BizarreActorPoutsOn/tree/main) for more detail. 
+
+See also historic mirrors of the ["firm_cache"](https://github.com/chinger1313/firm_cache)
+
+There is more than enough public info for you to accomplish your own flashing in the near term. Be careful. We are not responsible for damages, or butt hurt feelings! 
+
+# Mitigation
+
+Anzu will need to obtain their own "root keys" as described in the [https://www.dji.com/trust-center/resource/white-paper](DJI Drone Security White Paper 3.0), and burn them into their hardware. 
+
+New root keys:
+```
+The root keys will be injected into the OTP to ensure confidentiality. When the keys are
+transmitted, a unique secret key is used for encryption for every single DJI product, and the
+corresponding decryption is performed in TEE. After the key is written, it can only be accessed by
+the secure engine, and the software cannot access it, thus ensuring the confidentiality of the key.
+```
+
+New device certificates:
+```
+DJI products use X.509 format certificate, with each certificate bound to the drone’s SN. These
+device certificates are mainly used for device authentication and access control in services
+such as 4G enhanced transmission and device connection to the cloud.
+```
+
+Secure boot keys:
+```
+For every step in the boot process, the firmware is encrypted and signed by DJI to ensure its
+confidentiality and integrity. The firmware can only run after it is verified and decrypted. The firmware
+includes boot loaders, kernels, secure operating systems, flight control firmware, and others.
+...
+This secure boot chain ensures the integrity of the drone’s software system. 
+```
+
+Secure update keys:
+```
+DJI drones support remote system updates for new feature releases, bugs fixes, and security
+vulnerability patches. The update package will be signed and encrypted by DJI before it is released.
+The drone decrypts and verifies the signature of the update package, and begins the update
+once verification is complete. The update system also supports a hardware-based anti-rollback
+mechanism to prevent users from rolling back to vulnerable firmware versions
+...
+The secure update solution effectively prevents the installation and execution of malware on
+the DJI drone, ensuring the reliability of the drone software.
+```
+
+
+
+
 
 
 
