@@ -101,6 +101,8 @@ It won't be NDAA compliant, but sure, knock yourself out... go on and retrofit y
 # How to
 *coming soon*
 
+For now we are only providing R3E firmware, we still need access to an R3T. R3E firmware should be compatable with M3E, and R3T firmware compatible with M3T accordingly. If you'd like to be a guinnea pig, please reach out via [Git Issue](https://github.com/MAVProxyUser/BizarreActorPoutsOn/issues/new/choose).
+
 IF you are lucky an [OG](https://www.dji-rev.com) may help you out. You probably need to hit #spoon-feeding however. 
 
 See the retroroms ["List of the Modules and What they Effect"](https://github.com/MAVProxyUser/BizarreActorPoutsOn/tree/main) for more detail. 
