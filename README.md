@@ -279,7 +279,20 @@ dev0:dji-firmware-tools SlackOG$ tar tvf wm265e_1502_v20.00.00.04_20231212.pro.f
 
 ```
 
-At a glance only vendor.new.dat, system.new.dat, and normal.img differ. Every thing else appears to be the same. 
+These MD5's match. 
+
+file_contexts
+MD5: e61b3f3c3879b61761bb4d3ad98ef26d
+system.patch.dat
+MD5: d41d8cd98f00b204e9800998ecf8427e
+vendor.patch.dat
+MD5: d41d8cd98f00b204e9800998ecf8427e
+META-INF/CERT.SF
+MD5: 18c274bd8f4a4d1b254503c63ce07d39
+META-INF/MANIFEST.MF
+MD5: ba0f7cc692e3ee15646fdf42ca649aa7
+META-INF/com/android/otacert
+MD5: e5d999219205a1d30b4464c4bae21139
 
 # Mitigation
 
