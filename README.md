@@ -52,7 +52,7 @@ The Aloft AWS bucket was raided by unknown individuals, as well as security rese
 
 From the report above a very important observation is made: 
 "I was able to check the DJI server for the firmware, same as DJI Assistant 2 tool one can manually download firmware for updates. Let’s see if we download the 0802 firmware from DJI directly, click this link and see what you get"
-[wm265e_0802_v20.00.00.07_20231212.pro.fw.sig](https://archive.org/download/anzu-quick-analysis/Users/kfinisterre/Desktop/Aloft_DJI-CDN_dump/wm265e_0802_v11.07.01.16_20240625.pro.fw.sig) 
+[wm265e_0802_v20.00.00.07_20231212.pro.fw.sig](https://archive.org/download/anzu-quick-analysis/Users/SlackOG/Desktop/Aloft_DJI-CDN_dump/wm265e_0802_v11.07.01.16_20240625.pro.fw.sig) 
 
 "There is our Anzu firmware living on the DJI CDN, so the firmware is also hosted by DJI in contrary to the claims from Anzu."
 
@@ -188,7 +188,7 @@ successfully decrypt the firmware using the manually added key UFIE-2022-04"](ht
 I just showed you how to add a key above, but the M3E key is private as I mentioned above. 
 
 ```
-dev0:dji-firmware-tools kfinisterre$ git diff
+dev0:dji-firmware-tools SlackOG$ git diff
 diff --git a/dji_imah_fwsig.py b/dji_imah_fwsig.py
 index e9e5eb8..6967b5c 100755
 --- a/dji_imah_fwsig.py
@@ -211,7 +211,7 @@ index e9e5eb8..6967b5c 100755
 
 If you need a quick refresher on using the unpacking tools, this should help
 ```
-dev0:dji-firmware-tools kfinisterre$ python3 dji_imah_fwsig.py -h
+dev0:dji-firmware-tools SlackOG$ python3 dji_imah_fwsig.py -h
 usage: dji_imah_fwsig.py [-h] [-i SIGFILE] [-m MDPREFIX] [-f] [-r] [-k KEY_SELECT] [-v] (-u | -s | --version)
 
 DJI Firmware IMaH Un-signer and Decryptor tool
@@ -236,9 +236,50 @@ options:
 
 To unpack the firmware use the RAPTOR key that we added above (that you won't have)
 ```
-dev0:dji-firmware-tools kfinisterre$ python3 dji_imah_fwsig.py -i ~/Downloads/wm265e_0802_v11.07.01.16_20240625.pro.fw.sig -k UFIE-RAPTOR -f -u 
+dev0:dji-firmware-tools SlackOG$ python3 dji_imah_fwsig.py -i ~/Desktop/M3E_M3T_DJI-CDN_dump/wm265e_1502_v11.05.02.06_20231222.pro.fw.sig -k UFIE-RAPTOR -f -u 
+dev0:dji-firmware-tools SlackOG$ python3 dji_imah_fwsig.py -i ~/Desktop/Aloft_DJI-CDN_dump/wm265e_1502_v20.00.00.04_20231212.pro.fw.sig -k UFIE-RAPTOR -f -u
+
+dev0:dji-firmware-tools SlackOG$ tar tvf wm265e_1502_v11.05.02.06_20231222.pro.fw_1502.bin
+-rw-rw-r--  0 0      0         122 Aug 24  2017 META-INF/com/android/metadata
+-rw-rw-r--  0 0      0      619512 Aug 24  2017 META-INF/com/google/android/update-binary
+-rw-rw-r--  0 0      0        4935 Aug 24  2017 META-INF/com/google/android/updater-script
+-rw-rw-r--  0 0      0     2416640 Aug 24  2017 bootarea.img
+-rw-rw-r--  0 0      0       18592 Aug 24  2017 file_contexts
+-rw-rw-r--  0 0      0     7826272 Aug 24  2017 normal.img
+-rw-rw-r--  0 0      0     4539008 Aug 24  2017 rtos.img
+-rw-rw-r--  0 0      0   247595008 Aug 24  2017 system.new.dat
+-rw-rw-r--  0 1002   1002        0 Aug 24  2017 system.patch.dat
+-rw-rw-r--  0 0      0        1212 Aug 24  2017 system.transfer.list
+-rw-rw-r--  0 0      0    98885632 Aug 24  2017 vendor.new.dat
+-rw-rw-r--  0 1002   1002        0 Aug 24  2017 vendor.patch.dat
+-rw-rw-r--  0 0      0         757 Aug 24  2017 vendor.transfer.list
+-rw-rw-r--  0 0      0        1383 Aug 24  2017 META-INF/com/android/otacert
+-rw-rw-r--  0 0      0        1891 Aug 24  2017 META-INF/MANIFEST.MF
+-rw-rw-r--  0 0      0        1264 Aug 24  2017 META-INF/CERT.SF
+-rw-rw-r--  0 0      0        1477 Aug 24  2017 META-INF/CERT.RSA
+
+dev0:dji-firmware-tools SlackOG$ tar tvf wm265e_1502_v20.00.00.04_20231212.pro.fw_1502.bin
+-rw-rw-r--  0 0      0         122 Aug 24  2017 META-INF/com/android/metadata
+-rw-rw-r--  0 0      0      619512 Aug 24  2017 META-INF/com/google/android/update-binary
+-rw-rw-r--  0 0      0        4935 Aug 24  2017 META-INF/com/google/android/updater-script
+-rw-rw-r--  0 0      0     2416640 Aug 24  2017 bootarea.img
+-rw-rw-r--  0 0      0       18592 Aug 24  2017 file_contexts
+-rw-rw-r--  0 0      0     7821568 Aug 24  2017 normal.img
+-rw-rw-r--  0 0      0     4539008 Aug 24  2017 rtos.img
+-rw-rw-r--  0 0      0   247599104 Aug 24  2017 system.new.dat
+-rw-rw-r--  0 1002   1002        0 Aug 24  2017 system.patch.dat
+-rw-rw-r--  0 0      0        1212 Aug 24  2017 system.transfer.list
+-rw-rw-r--  0 0      0    98873344 Aug 24  2017 vendor.new.dat
+-rw-rw-r--  0 1002   1002        0 Aug 24  2017 vendor.patch.dat
+-rw-rw-r--  0 0      0         757 Aug 24  2017 vendor.transfer.list
+-rw-rw-r--  0 0      0        1383 Aug 24  2017 META-INF/com/android/otacert
+-rw-rw-r--  0 0      0        1891 Aug 24  2017 META-INF/MANIFEST.MF
+-rw-rw-r--  0 0      0        1264 Aug 24  2017 META-INF/CERT.SF
+-rw-rw-r--  0 0      0        1477 Aug 24  2017 META-INF/CERT.RSA
 
 ```
+
+At a glance only vendor.new.dat, system.new.dat, and normal.img differ. Every thing else appears to be the same. 
 
 # Mitigation
 
