@@ -101,7 +101,7 @@ It won't be NDAA compliant, but sure, knock yourself out... go on and retrofit y
 # How to
 *coming soon*
 
-We have determined the Raptor firmware to be identical to DJI M3E/M3T update from 2023-12-28 aka [v09.00.05.05](https://forum.dji.com/forum.php?mod=viewthread&tid=304298)
+We have determined the Raptor firmware to be nearly identical to DJI M3E/M3T update from 2023-12-28 aka [v09.00.05.05](https://forum.dji.com/forum.php?mod=viewthread&tid=304298)
 [https://web.archive.org/web/20240120220229/https://enterprise.dji.com/mavic-3-enterprise/downloads](https://web.archive.org/web/20240120220229/https://enterprise.dji.com/mavic-3-enterprise/downloads)
 
 [DJI Mavic 3 Enterprise Mavic 3E DJI Pilot Offline Firmware Update v09.00.05.05 - 2023-12-28](https://terra-1-g.djicdn.com/b20074248eff4b7f957d0f1a5ab29253/firmware/御3行业版/M3T_UAV_09.00.05.05_pro.zip)
@@ -109,6 +109,8 @@ We have determined the Raptor firmware to be identical to DJI M3E/M3T update fro
 [DJI Mavic 3 Enterprise Mavic 3T DJI Pilot Offline Firmware Update v09.00.05.05 - 2023-12-28](https://terra-1-g.djicdn.com/b20074248eff4b7f957d0f1a5ab29253/firmware/御3行业版/M3E_UAV_09.00.05.05_pro.zip)
 
 [Archive.org retro DJI M3 Enterprise downloads page](https://web.archive.org/web/20240120220229/https://enterprise.dji.com/mavic-3-enterprise/downloads)
+
+You can compare the software functionality vs the known [Eratta](https://dl.djicdn.com/downloads/DJI_Mavic_3_Enterprise/20230829/DJI_Mavic_3E_3T_Known_Issue_List_EN.pdf) list as well. 
 
 Software date breakdown 
 ```
