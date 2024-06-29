@@ -101,7 +101,56 @@ It won't be NDAA compliant, but sure, knock yourself out... go on and retrofit y
 # How to
 *coming soon*
 
-For now we are only providing R3E firmware, we still need access to an R3T. R3E firmware should be compatable with M3E, and R3T firmware compatible with M3T accordingly. If you'd like to be a guinnea pig, please reach out via [Git Issue](https://github.com/MAVProxyUser/BizarreActorPoutsOn/issues/new/choose).
+We have determined the Raptor firmware to be identical to DJI M3E/M3T update from 2023-12-28 aka [v09.00.05.05](https://forum.dji.com/forum.php?mod=viewthread&tid=304298)
+[https://web.archive.org/web/20240120220229/https://enterprise.dji.com/mavic-3-enterprise/downloads](https://web.archive.org/web/20240120220229/https://enterprise.dji.com/mavic-3-enterprise/downloads)
+
+[DJI Mavic 3 Enterprise Mavic 3E DJI Pilot Offline Firmware Update v09.00.05.05 - 2023-12-28](https://terra-1-g.djicdn.com/b20074248eff4b7f957d0f1a5ab29253/firmware/御3行业版/M3T_UAV_09.00.05.05_pro.zip)
+
+[DJI Mavic 3 Enterprise Mavic 3T DJI Pilot Offline Firmware Update v09.00.05.05 - 2023-12-28](https://terra-1-g.djicdn.com/b20074248eff4b7f957d0f1a5ab29253/firmware/御3行业版/M3E_UAV_09.00.05.05_pro.zip)
+
+[Archive.org retro DJI M3 Enterprise downloads page](https://web.archive.org/web/20240120220229/https://enterprise.dji.com/mavic-3-enterprise/downloads)
+
+Software date breakdown 
+```
++---------+-------------------+------------+------------------+------------+------------------+------------+------------------+------------+
+| Module  | wm265e            | Date       | wm265e           | Date       | wm265t           | Date       | wm265t           | Date       |
+| ID      | (20.00.0005)      |            | (09.00.0505)     |            | (20.00.0005)     |            | (09.00.0505)     |            |
++---------+-------------------+------------+------------------+------------+------------------+------------+------------------+------------+
+| 0802    | WM265E_E2         | 2023-12-12 | WM265E_E2        | 2023-12-22 | WM265T_E2        | 2023-12-12 | WM265T_E2        | 2023-12-22 |
+| 1502    | WM265_E1E         | 2023-12-12 | WM265_E1E        | 2023-12-22 | WM265_E1E        | 2023-12-12 | WM265_E1E        | 2023-12-22 |
+| 1100    | Battery           | 2023-07-31 | Battery          | 2023-07-31 | Battery          | 2023-07-31 | Battery          | 2023-07-31 |
+| 1200    | ESC_0             | 2022-12-08 | ESC_0            | 2022-12-08 | ESC_0            | 2022-12-08 | ESC_0            | 2022-12-08 |
+| 1202    | ESC_2             | 2022-12-08 | ESC_2            | 2022-12-08 | ESC_2            | 2022-12-08 | ESC_2            | 2022-12-08 |
+| 0105    | LCPU              | 2023-05-11 | LCPU             | 2023-05-11 | LCPU             | 2023-05-11 | LCPU             | 2023-05-11 |
+| 0500    | PD_MCU            | 2021-08-25 | PD_MCU           | 2021-08-25 | PD_MCU           | 2021-08-25 | PD_MCU           | 2021-08-25 |
+| 1006    | SPEAKER_MCU       | 2022-11-23 | SPEAKER_MCU      | 2022-11-23 | SPEAKER_MCU      | 2022-11-23 | SPEAKER_MCU      | 2022-11-23 |
+| 2607    | RTK982            | 2022-12-01 | RTK982           | 2022-12-01 | RTK982           | 2022-12-01 | RTK982           | 2022-12-01 |
+| 0103    | ****              | ****       | ****             | ****       | Infrared         | 2022-11-24 | Infrared         | 2022-11-24 |
+| 0106    | ****              | ****       | ****             | ****       | IR_USB_CONN      | 2022-07-13 | IR_USB_CONN      | 2022-07-13 |
++---------+-------------------+------------+------------------+------------+------------------+------------+------------------+------------+
+```
+
+Software version breakdown 
+```
++---------+-------------------+------------+------------------+------------+------------------+------------+------------------+------------+
+| Module  | wm265e            | Version    | wm265e           | Version    | wm265t           | Version    | wm265t           | Version    |
+| ID      | (20.00.0005)      |            | (09.00.0505)     |            | (20.00.0005)     |            | (09.00.0505)     |            |
++---------+-------------------+------------+------------------+------------+------------------+------------+------------------+------------+
+| 0802    | WM265E_E2         | 20.00.00.07 | WM265E_E2        | 11.05.02.05 | WM265T_E2        | 20.00.00.07 | WM265T_E2        | 11.05.02.05 |
+| 1502    | WM265_E1E         | 20.00.00.04 | WM265_E1E        | 11.05.02.06 | WM265_E1E        | 20.00.00.04 | WM265_E1E        | 11.05.02.06 |
+| 1100    | Battery           | 08.75.02.23 | Battery          | 08.75.02.23 | Battery          | 08.75.02.23 | Battery          | 08.75.02.23 |
+| 1200    | ESC_0             | 01.90.01.27 | ESC_0            | 01.90.01.27 | ESC_0            | 01.90.01.27 | ESC_0            | 01.90.01.27 |
+| 1202    | ESC_2             | 01.90.01.27 | ESC_2            | 01.90.01.27 | ESC_2            | 01.90.01.27 | ESC_2            | 01.90.01.27 |
+| 0105    | LCPU              | 01.13.10.01 | LCPU             | 01.13.10.01 | LCPU             | 04.13.10.01 | LCPU             | 04.13.10.01 |
+| 0500    | PD_MCU            | 05.02.22.46 | PD_MCU           | 05.02.22.46 | PD_MCU           | 05.02.22.46 | PD_MCU           | 05.02.22.46 |
+| 1006    | SPEAKER_MCU       | 01.00.00.28 | SPEAKER_MCU      | 01.00.00.28 | SPEAKER_MCU      | 01.00.00.28 | SPEAKER_MCU      | 01.00.00.28 |
+| 2607    | RTK982            | 00.00.79.80 | RTK982           | 00.00.79.80 | RTK982           | 00.00.79.80 | RTK982           | 00.00.79.80 |
+| 0103    | ****              | ****       | ****             | ****       | Infrared         | 10.01.05.07 | Infrared         | 10.01.05.07 |
+| 0106    | ****              | ****       | ****             | ****       | IR_USB_CONN      | 00.00.10.77 | IR_USB_CONN      | 00.00.10.77 |
++---------+-------------------+------------+------------------+------------+------------------+------------+------------------+------------+
+```
+
+R3E firmware should be compatable with M3E, and R3T firmware compatible with M3T accordingly. If you'd like to be a guinnea pig, please reach out via [Git Issue](https://github.com/MAVProxyUser/BizarreActorPoutsOn/issues/new/choose).
 
 IF you are lucky an [OG](https://www.dji-rev.com) may help you out. You probably need to hit #spoon-feeding however. 
 
@@ -110,6 +159,86 @@ See the retroroms ["List of the Modules and What they Effect"](https://github.co
 See also historic mirrors of the ["firm_cache"](https://github.com/chinger1313/firm_cache)
 
 There is more than enough public info for you to accomplish your own flashing in the near term. Be careful. We are not responsible for damages, or butt hurt feelings! 
+
+How did we determine the software was identical? 
+
+First to analyze and compare this you need to know how to add a key to dji_imah_fwsig.py from dji-firmware-tools... (but you probably don't have the one you need)
+
+["These specific keys were not integrated into list of keys found in the dji-firmware-tools script to decrypt and unpack the firmware, 
+so we manually added them in the code as UFIE-2022-04 and TBIE-2022-04, respectively. With this addition, we were finally able to 
+successfully decrypt the firmware using the manually added key UFIE-2022-04"](https://www.nozominetworks.com/blog/dji-mavic-3-drone-research-part-1-firmware-analysis)
+
+[These are the firmware encryption keys that @DJIGlobal uses to hide their GPL violations on Mavic 3.](https://x.com/tmbinc/status/1509821668495179796)
+"UFIE" = 56 CF 6D 75 7A 45 32 4C 6E 1D 97 85 41 5F 44 85
+"TBIE" = FF B7 AC 5A 03 5B 0E F2 F4 1D CD B1 FC 66 FB 6B
+
+
+['@tmbinc If I remove the signature length limit then I just get signature verification failed from dji_imah_fwsig.py and there are no hardcoded keys in that file that start with the first bytes of your UFIE key above. I added the keys above as UFIE-2022-08 and TBIE-2022-08 respectively. I still get the same error when I use them, e.g.](https://dji-rev.com/dji-rev/pl/g956dkffrt89z8r8cshgzbzhqe)
+
+```
+../../dji-firmware-tools/dji_imah_fwsig.py -vvv -u -i wm260_0802_v10.00.40.18_20220121.pro.fw.sig -k PRAK-2020-01 -k UFIE-2022-08 -k TBIE-2022-08
+    "UFIE-2022-08":  bytes([ 
+        0x56, 0xcf, 0x6d, 0x75, 0x7a, 0x45, 0x32, 0x4c, 0x6e, 0x1d, 0x97, 0x85, 0x41, 0x5f, 0x44, 0x85
+    ]),
+    "TBIE-2022-08":  bytes([ 
+        0xff, 0xb7, 0xac, 0x5a, 0x03, 0x5b, 0x0e, 0xf2, 0xf4, 0x1d, 0xcd, 0xb1, 0xfc, 0x66, 0xfb, 0x6b
+    ]),'
+```
+
+I just showed you how to add a key above, but the M3E key is private as I mentioned above. 
+
+```
+dev0:dji-firmware-tools kfinisterre$ git diff
+diff --git a/dji_imah_fwsig.py b/dji_imah_fwsig.py
+index e9e5eb8..6967b5c 100755
+--- a/dji_imah_fwsig.py
++++ b/dji_imah_fwsig.py
+@@ -164,6 +164,16 @@ keys = {
+     "SLEK":  bytes([ # Slack community Encryption Key; generated 2018-01-19 by Jan Dumon
+         0x56, 0x79, 0x6C, 0x0E, 0xEE, 0x0F, 0x38, 0x05, 0x20, 0xE0, 0xBE, 0x70, 0xF2, 0x77, 0xD9, 0x0B
+     ]),
++    # WM265e FW v11.07.01.16_20240625 - Anzu Raptor
++    "UFIE-RAPTOR":  bytes([ 
++        0xCENSORED, 0xSORRY
++    ]),
++    "UFIE-2022-08":  bytes([ 
++        0x56, 0xcf, 0x6d, 0x75, 0x7a, 0x45, 0x32, 0x4c, 0x6e, 0x1d, 0x97, 0x85, 0x41, 0x5f, 0x44, 0x85
++    ]),
++    "TBIE-2022-08":  bytes([ 
++        0xff, 0xb7, 0xac, 0x5a, 0x03, 0x5b, 0x0e, 0xf2, 0xf4, 0x1d, 0xcd, 0xb1, 0xfc, 0x66, 0xfb, 0x6b
++    ]),
+```
+
+If you need a quick refresher on using the unpacking tools, this should help
+```
+dev0:dji-firmware-tools kfinisterre$ python3 dji_imah_fwsig.py -h
+usage: dji_imah_fwsig.py [-h] [-i SIGFILE] [-m MDPREFIX] [-f] [-r] [-k KEY_SELECT] [-v] (-u | -s | --version)
+
+DJI Firmware IMaH Un-signer and Decryptor tool
+
+options:
+  -h, --help            show this help message and exit
+  -i SIGFILE, --sigfile SIGFILE
+                        directory and file name of signed and encrypted IM*H firmware module (default is base name of mdprefix with extension sig appended, in working dir)
+  -m MDPREFIX, --mdprefix MDPREFIX
+                        directory and file name prefix for the single un-signed and unencrypted firmware module (default is base name of sigfile with extension stripped, in
+                        working dir)
+  -f, --force-continue  force continuing execution despite warning signs of issues
+  -r, --random-scramble
+                        while signing, use random scramble vector instead of from INI
+  -k KEY_SELECT, --key-select KEY_SELECT
+                        select a specific key to be used for given four character code, if multiple keys match this fourcc
+  -v, --verbose         increases verbosity level; max level is set by -vvv
+  -u, --unsign          un-sign and decrypt the firmware module
+  -s, --sign            sign and encrypt the firmware module
+  --version             display version information and exit
+```
+
+To unpack the firmware use the RAPTOR key that we added above (that you won't have)
+```
+dev0:dji-firmware-tools kfinisterre$ python3 dji_imah_fwsig.py -i ~/Downloads/wm265e_0802_v11.07.01.16_20240625.pro.fw.sig -k UFIE-RAPTOR -f -u 
+
+```
 
 # Mitigation
 
