@@ -281,8 +281,8 @@ dev0:dji-firmware-tools SlackOG$ tar tvf wm265e_1502_v20.00.00.04_20231212.pro.f
 
 ```
 
-These MD5's match. 
-
+These MD5's match directly 1:1 the other images would need to be extracted and compared. 
+```
 file_contexts
 MD5: e61b3f3c3879b61761bb4d3ad98ef26d
 system.patch.dat
@@ -295,6 +295,7 @@ META-INF/MANIFEST.MF
 MD5: ba0f7cc692e3ee15646fdf42ca649aa7
 META-INF/com/android/otacert
 MD5: e5d999219205a1d30b4464c4bae21139
+```
 
 # Mitigation
 
